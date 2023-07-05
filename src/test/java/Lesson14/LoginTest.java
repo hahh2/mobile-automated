@@ -32,6 +32,9 @@ public class LoginTest {
             explicitWait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.id("android:id/alertTitle")));
             MobileElement successTxt = appiumDriver.findElement(MobileBy.id("android:id/alertTitle"));
             System.out.println("HELLO " + successTxt.getText());
+
+            MobileElement okBtn = appiumDriver.findElement(MobileBy.id("android:id/button1"));
+            okBtn.click();
             Thread.sleep(3000);
         }catch (Exception e){
             e.printStackTrace();

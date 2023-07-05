@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.URL;
 
-public class lesson14 {
+public class LaunchAppTest {
     public static void main(String[] args){
         AppiumDriver<MobileElement> appiumDriver = null;
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
@@ -16,6 +16,8 @@ public class lesson14 {
         desiredCapabilities.setCapability("udid","R58M56XSDQH");
         desiredCapabilities.setCapability("appPackages","com.wdiodemoapp");
         desiredCapabilities.setCapability("appActivity","com.wdiodemoapp.MainActivity");
+//        desiredCapabilities.setCapability("appPackages","com.setel.mobile.staging2");
+//        desiredCapabilities.setCapability("appActivity","com.zapmobile.zap.splash.SplashActivity");
 
         //init appium server
         try {

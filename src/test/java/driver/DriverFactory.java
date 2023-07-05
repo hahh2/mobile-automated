@@ -18,6 +18,8 @@ public class DriverFactory implements MobileCapabilityTypeEx {
         desiredCapabilities.setCapability(UDID,"R58M56XSDQH");
         desiredCapabilities.setCapability(APP_PACKAGE,"com.wdiodemoapp");
         desiredCapabilities.setCapability(APP_ACTIVITY,"com.wdiodemoapp.MainActivity");
+//        desiredCapabilities.setCapability("appPackages","com.setel.mobile.staging2");
+//        desiredCapabilities.setCapability("appActivity","com.zapmobile.zap.splash.SplashActivity");
         URL appiumServer = null;
         try {
             appiumServer = new URL("http://localhost:4723/wd/hub");
